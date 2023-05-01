@@ -45,6 +45,12 @@ class card_agente extends HTMLElement {
     styles() {
         const css = document.createElement('style')
         css.textContent = `
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
             .card__agente {
             display: flex;
             flex-direction: column;

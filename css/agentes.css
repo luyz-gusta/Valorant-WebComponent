@@ -1,7 +1,7 @@
 .container__agentes {
     display: flex;
     flex-direction: column;
-    height: max-content;
+    height: 100%;
     width: 100%;
     padding: 50px;
     gap: 50px;
@@ -25,53 +25,26 @@
     font-size: 1.5rem;
 }
 
-.filtro__categoria {
+.filtro__categoria_agentes {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-ul {
+.filtro__categoria_agentes ul {
     display: flex;
     gap: 20px;
 }
 
-li {
+.filtro__categoria_agentes li {
     font-family: 'Bruno Ace';
     font-weight: 400;
     font-size: 32px;
     cursor: pointer;
+    
 }
 
 li:hover {
     color: #A71921;
-}
-
-.card__agente {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--second-color);
-    border-radius: 20px;
-    width: 250px;
-    height: 330px;
-}
-
-.cards_agentes{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px 250px;
-}
-
-.card__agente p {
-    font-family: 'Poppins';
-    font-weight: 700;
-    font-size: 26px;
-    color: white;
-}
-
-.card__image{
-    width: 240px;
-    height: 240px;
+    border: 2px solid #DC3D4B;
 }

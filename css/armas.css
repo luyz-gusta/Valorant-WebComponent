@@ -1,0 +1,41 @@
+.container__armas {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    gap: 50px;
+}
+
+.filtro__categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.filtro__categoria p {
+    font-family: 'Bruno Ace';
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.filtro__categoria ul {
+    display: flex;
+    gap: 20px;
+}
+
+.li__categoria {
+    font-family: 'Bruno Ace';
+    font-weight: 400;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cards__armas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 220px;
+}
+
