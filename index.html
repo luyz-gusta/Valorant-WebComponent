@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Open+Sans&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/agentes.css">
+    <script src="https://kit.fontawesome.com/cb4f3aa626.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer type="module"></script>
+    <title>Valorant</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo-riot.png" alt="Logo da empresa da riot games" class="logo__riot">
+        <nav>
+            <a href="/" class="link__header" onclick="route()">Home</a>
+            <a href="/agentes" class="link__header" onclick="route()" id="agente">Agentes</a>
+            <a href="/armas" class="link__header" onclick="route()">Armas</a>
+            <a href="/mapas" class="link__header" onclick="route()">Mapas</a>
+        </nav>
+        <img src="./img/icon-valorant.png" alt="Logo do jogo valorant criado pelo riot" class="logo__valorant">
+    </header>
+    <main id="root">
+        <!-- <div class="container__agentes" id="container__agentes">
+            <div class="filtro__nome">
+                <p class="filtro__text">Agente: </p>
+                <input type="text" id="input__nome">
+            </div>
+            <div class="filtro__categoria">
+                <p class="filtro__text">Categorias:</p>
+                <ul>
+                    <li id="todos">Todos</li>
+                    <li id="duelistas">Duelista</li>
+                    <li id="controladores">Controlador</li>
+                    <li id="sentinelas">Sentinela</li>
+                    <li id="iniciador">Iniciador</li>
+                </ul>
+            </div>
+            <div class="cards_agentes" id="cards_agentes">
+                
+            </div>
+        </div> -->
+    </main>
+    <footer>
+        <div class="logo">
+            <img src="./img/logo-riot.png" alt="Logo da empresa da riot games" class="logo__riot">
+            <span> | </span>
+            <img src="./img/icon-valorant.png" alt="Logo do jogo valorant criado pelo riot" class="logo__valorant">
+        </div>
+        <p>Luiz Gustavo | 2023</p>
+        <div class="social__media">
+            <a href="">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

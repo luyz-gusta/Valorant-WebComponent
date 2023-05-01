@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    gap: 210px;
+    height: 100px;
+    background-color: var(--background-header-footer);
+}
+
+.logo__valorant {
+    width: 80px;
+    height: 80px;
+    filter: invert(100%);
+}
+
+.logo__riot {
+    width: 150px;
+    height: 60px;
+    filter: invert(100%);
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+.link__header {
+    font-family: 'Bruno Ace';
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.5s;
+}
+
+.link__header:hover{
+    color: #FF3744;
+}
