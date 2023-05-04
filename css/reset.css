@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-ul,li, ol {
+ul,
+li,
+ol {
     list-style: none;
 }
 
-body{
+body {
     display: grid;
     grid-template-rows: 100px 1fr 100px;
     height: 100vh;
@@ -26,8 +28,12 @@ body{
     --background-header-footer: #111111;
     --primary-color: #F9F9F9;
     --second-color: #DC3D4B;
+    --v-red: #ff4655;
+    --v-white: #ece8e1;
+    --v-black: #0f1923;
+    --v-outline: rgba(236, 232, 225, 0.5);
 }
 
-#root{
+#root {
     height: 100%;
 }

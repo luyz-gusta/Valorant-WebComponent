@@ -62,11 +62,6 @@ class card_agente extends HTMLElement {
             height: 350px;
         }
         
-        .cards_agentes{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 100px 250px;
-        }
         
         .card__agente p {
             font-family: 'Poppins';

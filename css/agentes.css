@@ -36,7 +36,7 @@
     gap: 20px;
 }
 
-.filtro__categoria_agentes li {
+.item__categoria__agent {
     font-family: 'Bruno Ace';
     font-weight: 400;
     font-size: 32px;
@@ -47,4 +47,10 @@
 li:hover {
     color: #A71921;
     border: 2px solid #DC3D4B;
+}
+
+.cards__agentes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 250px;
 }
