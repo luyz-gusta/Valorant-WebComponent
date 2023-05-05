@@ -103,10 +103,9 @@ const getAgentsCategoria = (categoria) => {
 
 const filtroAgente = (nomePersonagem) => {
     const nomes = []
-    let teste = 'teste'
 
     listaAgentes.agentes.forEach((agente) => {
-        if(agente.nome.toUpperCase() == nomePersonagem.toUpperCase()){
+        if(String(agente.nome).toUpperCase() == String(nomePersonagem).toUpperCase()){
             nomes.push(agente)
         }
     })

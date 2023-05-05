@@ -41,6 +41,8 @@ class card_arma extends HTMLElement {
             cardArma.classList.add('precisao')
         } else if (this.categoria == 'Armas Leves') {
             cardArma.classList.add('leves')
+        }else if(this.categoria == 'Submetralhadoras'){
+            cardArma.classList.add('subs')
         }
 
         const nomeArma = document.createElement('p')
@@ -88,25 +90,28 @@ class card_arma extends HTMLElement {
             gap: 24px;
         }
         
-        .arma__pesada{
-            background-color: #7436D5;
-        }
+        // .arma__pesada{
+        //     border: 2px solid #7436D5;
+        // }
         
-        .escopeta{
-            background-color: #C0B634;
-        }
+        // .escopeta{
+        //     border: 2px solid  #C0B634;
+        // }
         
-        .fuzis{
-            background-color: #3347B0;
-        }
+        // .fuzis{
+        //     border: 2px solid #3347B0;
+        // }
         
-        .precisao{
-            background-color: #F86C2F;
-        }
+        // .precisao{
+        //     border: 2px solid #F86C2F;
+        // }
         
-        .leves{
-            background-color: #207535;
-        }
+        // .leves{
+        //     border: 8px solid  #207535;
+        // }
+        // .subs{
+
+        // }
         
         .nome__categoria {
             font-family: 'Poppins';

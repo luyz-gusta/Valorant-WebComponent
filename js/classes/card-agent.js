@@ -57,6 +57,10 @@ class card_agente extends HTMLElement {
             align-items: center;
             justify-content: center;
             background-color: var(--second-color);
+            background-image: url(../img/icon-valorant.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
             border-radius: 20px;
             width: 250px;
             height: 350px;
