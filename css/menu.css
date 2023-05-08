@@ -1,0 +1,38 @@
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .link__header {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        gap: 0;
+        background-color: var(--background-header-footer);
+        z-index: 1;
+    }
+    .mobile-menu .link__header {
+        display: block;
+        padding-top: 1.2rem;
+        z-index: 1;
+    }
+    .open {
+        display: block;
+    }
+}

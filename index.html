@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina com objetivo didatico, para o aprendizado de rotas e de web componentes">
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Open+Sans&family=Poppins:wght@400;700&display=swap"
@@ -25,14 +26,25 @@
 
 <body>
     <header>
-        <img src="./img/logo-riot.png" alt="Logo da empresa da riot games" class="logo__riot">
+        <img src="./img/logo-riot.webp" alt="Logo da empresa da riot games" class="logo__riot">
         <nav id="nav-menu">
             <a href="/" class="link__header" onclick="route()">Home</a>
             <a href="/agentes" class="link__header" onclick="route()" id="agente">Agentes</a>
             <a href="/armas" class="link__header" onclick="route()">Armas</a>
             <a href="/mapas" class="link__header" onclick="route()">Mapas</a>
         </nav>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./img/menu_white_36dp.svg" alt=""></button>
+        </div>
         <img src="./img/icon-valorant.png" alt="Logo do jogo valorant criado pelo riot" class="logo__valorant">
+        <div class="mobile-menu">
+            <nav id="nav-menu">
+                <a href="/" class="link__header" onclick="route()">Home</a>
+                <a href="/agentes" class="link__header" onclick="route()" id="agente">Agentes</a>
+                <a href="/armas" class="link__header" onclick="route()">Armas</a>
+                <a href="/mapas" class="link__header" onclick="route()">Mapas</a>
+            </nav>
+        </div>
     </header>
      <main id="root"> 
         <div class="container__home">
@@ -66,28 +78,29 @@
                     </div>
                   </button>
             </div>
-            <img src="./img/imagem-valorant.png" alt="imagem do jogo valorant">
+            <img src="./img/imagem-valorant.webp" alt="imagem do jogo valorant">
         </div>
     </main>
     <footer>
         <div class="logo">
-            <img src="./img/logo-riot.png" alt="Logo da empresa da riot games" class="logo__riot">
+            <img src="./img/logo-riot.webp" alt="Logo da empresa da riot games" class="logo__riot">
             <span> | </span>
             <img src="./img/icon-valorant.png" alt="Logo do jogo valorant criado pelo riot" class="logo__valorant">
         </div>
         <p>Luiz Gustavo | 2023</p>
         <div class="social__media">
-            <a href="https://github.com/luyz-gusta">
+            <a href="https://github.com/luyz-gusta" aria-label="Link que para ser redirecionado para o github do desenvolvedor">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/luyz-gusta/">
+            <a href="https://www.linkedin.com/in/luyz-gusta/" aria-label="Link que para ser redirecionado para o linkedin do desenvolvedor">
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://www.instagram.com/luyz.gusta/">
+            <a href="https://www.instagram.com/luyz.gusta/" aria-label="Link que para ser redirecionado para o instagram do desenvolvedor">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

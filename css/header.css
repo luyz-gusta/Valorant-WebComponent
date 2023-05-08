@@ -43,9 +43,9 @@ nav{
 }
 
 @media (max-width: 640px){
-    nav{
+    /* nav{
         display: none;
-    }
+    } */
     .logo__valorant{
         display: none;
     }

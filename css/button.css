@@ -1,4 +1,4 @@
-button {
+.primary {
     font-family: 'Poppins';
     font-weight: 400;
     width: clamp(15.625rem, 13.875rem + 6.6667vw, 21.875rem);
@@ -15,12 +15,12 @@ button {
     grid-column: 1;
 }
 
-button:hover {
+.primary:hover {
     color: var(--v-red);
 }
 
-button::before,
-button::after {
+.primary::before,
+.primary::after {
     background-color: transparent;
     content: "";
     display: block;
@@ -31,12 +31,12 @@ button::after {
     left: 0;
 }
 
-button::before {
+.primary::before {
     border-bottom: 0;
     top: 0;
 }
 
-button::after {
+.primary::after {
     border-top: 0;
     bottom: 0;
 }
@@ -74,7 +74,7 @@ button::after {
     transition: transform 0.3s ease-out;
 }
 
-button:hover .hover-effect {
+.primary:hover .hover-effect {
     transform: translateX(0) skew(-10deg);
 }
 
@@ -100,7 +100,7 @@ button:hover .hover-effect {
     transition: background-color 0.2s ease-in;
 }
 
-button:hover .label-text:after {
+.primary:hover .label-text:after {
     background-color: var(--v-red);
 }
 
