@@ -13,7 +13,7 @@
 .container__main h1 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: clamp(1.25rem, 0.9rem + 1.3333vw, 2.5rem);
+    font-size: clamp(1.5625rem, 1.3rem + 1vw, 2.5rem);    
     width: 100%;
     color: #333333;
 }
@@ -35,7 +35,7 @@
     width: 40vw;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: clamp(0.75rem, 0.645rem + 0.4vw, 1.125rem);
+    font-size: clamp(1rem, 0.965rem + 0.1333vw, 1.125rem);    
     color: #444444;
 }
 
