@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 50px;
+    padding: clamp(1.375rem, 0.885rem + 1.8667vw, 3.125rem) 50px;
     gap: 50px;
 }
 
@@ -16,12 +16,12 @@
 .filtro__text {
     font-family: 'Bruno Ace';
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 1.22rem + 1.0667vw, 2.5rem);
 }
 
 .filtro__nome input {
     height: 40px;
-    width: 10vw;
+    width: 180px;
     font-size: 1.5rem;
 }
 
@@ -39,7 +39,7 @@
 .item__categoria__agent {
     font-family: 'Bruno Ace';
     font-weight: 400;
-    font-size: 32px;
+    font-size: clamp(1rem, 0.72rem + 1.0667vw, 2rem);    
     cursor: pointer;
     
 }
@@ -49,10 +49,37 @@ li:hover {
     border: 2px solid #DC3D4B;
 }
 
-.cards__agentes{
+.cards__agentes{    
     display: flex;
     flex-wrap: wrap;
-    gap: 100px 250px;    
+    gap: clamp(1.25rem, -0.15rem + 5.3333vw, 6.25rem) clamp(1.25rem, -2.775rem + 15.3333vw, 15.625rem);
 }
 
+@media (max-width: 1440px){
+    .cards__agentes{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 540px){
+    .filtro__nome{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .filtro__categoria_agentes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 450px){
+    .filtro__categoria_agentes ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+}
 

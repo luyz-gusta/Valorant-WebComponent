@@ -62,21 +62,27 @@ class card_agente extends HTMLElement {
             background-repeat: no-repeat;
             background-position: center;
             border-radius: 20px;
-            width: 250px;
-            height: 350px;
+            width: clamp(12.5rem, 11.625rem + 3.3333vw, 15.625rem);
+            height: clamp(15.625rem, 13.875rem + 6.6667vw, 21.875rem);
+            transition: all 0.5s;
+        }
+
+        .card__agente:hover{
+            width: clamp(14.0625rem, 13.1875rem + 3.3333vw, 17.1875rem);
+            height: clamp(17.1875rem, 15.4375rem + 6.6667vw, 23.4375rem);
         }
         
         
         .card__agente p {
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 26px;
+            font-size: clamp(1.25rem, 1.145rem + 0.4vw, 1.625rem);
             color: white;
         }
         
         .card__image{
-            width: 240px;
-            height: 240px;
+            width:  clamp(10.625rem, 9.4rem + 4.6667vw, 15rem);
+            height: clamp(10.625rem, 9.4rem + 4.6667vw, 15rem);
         }
         `
 
