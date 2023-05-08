@@ -85,51 +85,34 @@ class card_arma extends HTMLElement {
             justify-content: center;
             background-color: var(--second-color);
             border-radius: 20px;
-            width: 270px;
-            height: 350px;
+            width: clamp(12.5rem, 11.275rem + 4.6667vw, 16.875rem);
+            height: clamp(17.1875rem, 15.875rem + 5vw, 21.875rem);
             gap: 24px;
+            transition: all 0.5s;
         }
-        
-        // .arma__pesada{
-        //     border: 2px solid #7436D5;
-        // }
-        
-        // .escopeta{
-        //     border: 2px solid  #C0B634;
-        // }
-        
-        // .fuzis{
-        //     border: 2px solid #3347B0;
-        // }
-        
-        // .precisao{
-        //     border: 2px solid #F86C2F;
-        // }
-        
-        // .leves{
-        //     border: 8px solid  #207535;
-        // }
-        // .subs{
 
-        // }
+        .card__arma:hover{
+            width: clamp(14.0625rem, 12.8375rem + 4.6667vw, 18.4375rem);
+            height: clamp(18.75rem, 17.4375rem + 5vw, 23.4375rem);
+        }
         
         .nome__categoria {
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 26px;
+            font-size: clamp(1.25rem, 1.145rem + 0.4vw, 1.625rem);
             color: white;
         }
         
         .dano__arma {
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 1.25rem;
+            font-size: clamp(0.875rem, 0.77rem + 0.4vw, 1.25rem);
             color: white;
         }
         
         .foto__arma {
-            width: 250px;
-            height: 90px;
+            width: clamp(12.5rem, 11.625rem + 3.3333vw, 15.625rem);
+            height: clamp(3.75rem, 3.225rem + 2vw, 5.625rem);
         }
         `
 

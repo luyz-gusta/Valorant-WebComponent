@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    padding: 50px;
+    padding: clamp(1.375rem, 0.885rem + 1.8667vw, 3.125rem) 50px;
     gap: 50px;
 }
 
@@ -17,18 +17,19 @@
 .filtro__categoria p {
     font-family: 'Bruno Ace';
     font-weight: 400;
-    font-size: 2rem;
+    font-size: clamp(1rem, 0.72rem + 1.0667vw, 2rem);   
 }
 
 .filtro__categoria ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .li__categoria {
     font-family: 'Bruno Ace';
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 0.61rem + 0.5333vw, 1.25rem);
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -36,7 +37,12 @@
 .cards__armas {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px 220px;
+    gap: clamp(1.25rem, -0.15rem + 5.3333vw, 6.25rem) clamp(1.25rem, -2.25rem + 13.3333vw, 13.75rem);
 }
 
+@media (max-width: 1440px){
+    .cards__armas{
+        justify-content: center;
+    }
+}
 
