@@ -2,21 +2,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 120px;
-    gap: 210px;
-    height: 100px;
+    padding: 0rem 8vw;
+    width: 100%;
     background-color: var(--background-header-footer);
 }
 
 .logo__valorant {
-    width: 80px;
-    height: 80px;
+    width: clamp(2.8125rem, 2.2rem + 2.3333vw, 5rem);
+    height: clamp(2.8125rem, 2.2rem + 2.3333vw, 5rem);
     filter: invert(100%);
 }
 
 .logo__riot {
-    width: 150px;
-    height: 60px;
+    width: clamp(7.5rem, 6.975rem + 2vw, 9.375rem);;
+    height: clamp(2.5rem, 2.15rem + 1.3333vw, 3.75rem);
     filter: invert(100%);
 }
 
@@ -28,11 +27,26 @@ nav{
 .link__header {
     font-family: 'Bruno Ace';
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 0.58rem + 1.6vw, 2.5rem);
     color: white;
     transition: all 0.5s;
 }
 
 .link__header:hover{
     color: #FF3744;
+}
+
+@media (max-width: 720px){
+    header{
+        padding: 0px 5vw;
+    }
+}
+
+@media (max-width: 640px){
+    nav{
+        display: none;
+    }
+    .logo__valorant{
+        display: none;
+    }
 }

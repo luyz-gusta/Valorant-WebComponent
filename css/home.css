@@ -13,7 +13,7 @@
 .container__main h1 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: clamp(1.25rem, 0.9rem + 1.3333vw, 2.5rem);
     width: 100%;
     color: #333333;
 }
@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: clamp(1.25rem, 0.9rem + 1.3333vw, 2.5rem);
 }
 
 .text {
@@ -35,145 +35,37 @@
     width: 40vw;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 18px;
+    font-size: clamp(0.75rem, 0.645rem + 0.4vw, 1.125rem);
     color: #444444;
 }
 
-button {
-    font-family: 'Poppins';
-    font-weight: 400;
-    width: 50%;
-    margin-bottom: 3rem;
-    position: relative;
-    display: block;
-    font-size: 1.5rem;
-    padding: 0.7rem;
-    border: 0;
-    text-transform: uppercase;
-    background-color: transparent;
-    cursor: pointer;
-    color: var(--v-red);
-    grid-column: 1;
+@media (max-width: 768px){
+    .container__home{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .container__main p {
+        width: 80vw;
+    }
+
+    .container__home img {
+        width: 80vw;
+        height: 70vh;
+        margin-bottom: 50px;
+    }
 }
 
-button:hover {
-    color: var(--v-red);
+@media (max-width: 520px){
+    .container__home img {
+        width: 80vw;
+        height: 50vh;
+    }
 }
 
-button::before,
-button::after {
-    background-color: transparent;
-    content: "";
-    display: block;
-    position: absolute;
-    height: calc(50% - 0.4rem);
-    width: 100%;
-    border: 1px solid var(--v-outline);
-    left: 0;
-}
-
-button::before {
-    border-bottom: 0;
-    top: 0;
-}
-
-button::after {
-    border-top: 0;
-    bottom: 0;
-}
-
-/* LABEL  */
-.label {
-    position: relative;
-    overflow: hidden;
-    margin: 0;
-}
-
-.label:before {
-    content: "";
-    height: 100%;
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-}
-
-/* Hover Effect */
-.hover-effect {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 120%;
-    top: 0;
-    left: -5%;
-    z-index: 1;
-    background-color: var(--v-black);
-    transform: translateX(-100%) skew(-10deg);
-    transition: -webkit-transform 0.3s ease-out;
-    transition: transform 0.3s ease-out;
-}
-
-button:hover .hover-effect {
-    transform: translateX(0) skew(-10deg);
-}
-
-/* Label Text */
-.label-text {
-    position: relative;
-    display: block;
-    padding: 1.9rem 3rem;
-    background-color: transparent;
-    z-index: 1;
-    color: white;
-}
-
-.label-text:after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 0.6rem;
-    width: 0.6rem;
-    right: 0;
-    bottom: 0;
-    background-color: var(--v-black);
-    transition: background-color 0.2s ease-in;
-}
-
-button:hover .label-text:after {
-    background-color: var(--v-red);
-}
-
-/* OUTLINE BUTTON */
-.outline {
-    color: var(--v-red);
-}
-
-.outline .label::before,
-.outline .label::after {
-    border: 1px solid var(--v-outline);
-}
-
-/* OUTLINE RED BUTTON */
-.outline+.red {
-    color: var(--v-black);
-}
-
-.outline+.red:hover {
-    color: var(--v-red);
-}
-
-.outline+.red .label::before,
-.outline+.red .label::after {
-    border-color: var(--v-black);
-}
-
-/* PRIMARY BUTTON */
-.primary {
-    color: var(--v-black);
-}
-
-.primary .label::before {
-    background-color: var(--v-red);
+@media (max-width: 425px){
+    .container__home img {
+        width: 80vw;
+        height: 40vh;
+    }
 }

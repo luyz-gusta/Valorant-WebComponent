@@ -1,13 +1,10 @@
 'use strict'
 
-import { 
-    carregarCardsAgentes, 
-    carregarCategoriasAgents, 
-    carregarCardsArmas, 
-    carregarCategoriasArmas,
-    carregarCardsMapas,
-    carregarCardsAgentesFiltro
-} from "./app.js"
+import { carregarCardsAgentes, carregarCardsAgentesFiltro, carregarCategoriasAgents } from "./main-agents.js"
+
+import { carregarCardsArmas, carregarCardsArmasFiltro, carregarCategoriasArmas } from "./main-weapons.js"
+
+import { carregarCardsMapas } from "./main-maps.js"
 
 const routes = {
     '/' : '/pages/home.html',
@@ -40,6 +37,7 @@ const route = async () => {
     }else if(window.location.pathname == '/armas'){
         carregarCardsArmas()
         carregarCategoriasArmas()
+        document.getElementById('list-weapons').addEventListener('click', carregarCardsArmasFiltro)
     }else if(window.location.pathname == '/mapas'){
         carregarCardsMapas()
     }
